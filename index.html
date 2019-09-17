@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+	<meta charset="utf-8">
+	<title>Flexible Landing page</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--
+	<link rel='stylesheet' id='fontawesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css?ver=4.4.1' type='text/css' media='all' />
+	-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<!--  
+	<script type="text/javascript" href="script/script.js"></script>
+	-->
+	<!--Плавное перемещение по ссылкам меню навигации-->
+	<script type="text/javascript">
+		$(document).ready(function(){
+		   	$("#menu").on("click","a", function (event) {
+			   	event.preventDefault();
+			   	var id  = $(this).attr('href'),
+				top = $(id).offset().top;
+			   	$('body,html').animate({scrollTop: top}, 1500);
+		   	});
+	   	});
+	</script>
+
+	<!--Плавное перемещение вверх по клику кнопки back to top-->
+	<script type="text/javascript">
+		function up() {  
+  			var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);  
+				if(top > 0) {  
+  					window.scrollBy(0,((top+100)/-10));  
+  					t = setTimeout('up()',20);  
+				} else clearTimeout(t);  
+			return false;  
+		} 
+   	</script>
+	  
+</head>
+
+<body>
+	<div class="container">
+		<!--
+		*********************************************************************************
+		***************************************HEADER************************************
+		*********************************************************************************
+		-->
+		<header id="home">
+			<div class="header-overlay">
+				<div class="logo-nav">
+					<img src="img/flexible-logo.png" alt="logo" class="logo" width="145" height="47">
+		
+					<nav>
+					<!--
+					<label for="menu"></label>
+					<input type="checkbox" id="menu">
+					-->
+			
+						<ul id="menu">
+							<li><a href="#home">home</a></li>
+							<li><a href="#blog">blog</a></li>
+							<li><a href="#features">features</a></li>
+							<li><a href="#pricing">pricing</a></li>
+							<li><a href="#contact">contact</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<h1>Flexible Landing page</h1>
+				<p>A simple a modern one page business theme for your company</p>
+				<button type="button" class="btn-call">call to action</button>
+			</div>
+			
+		</header>
+		
+		<main>
+		<!--
+		*********************************************************************************
+		******************************SECTION RECENT POSTS*******************************
+		*********************************************************************************
+		-->
+		<section id="blog">
+			<h2>recent posts</h2>
+			<p>we have a lot to work, so we must take care of our employees</p>
+			
+			<div class="blog-container">
+				<div class="bestblog">
+					<a href="img/phones.jpg" target="_blank"><img src="img/phones.jpg" alt="blog image" class="img-blog" width="262.5" height="176.31"></a>
+					<h3>best blog post</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae dolor</p>
+					<a href="#"><span>see more&nbsp;<i class="fas fa-chevron-right"></i></span></a>
+					
+				</div>
+				
+				<div class="standartblog">
+					<a href="img/chair.jpg" target="_blank"><img src="img/chair.jpg" alt="blog image" class="img-blog" width="262.5" height="176.31"></a>
+					<h3>standart blog post</h3>
+					<p>Vestibulum nisl lectus, viverra hendrerit tincidunt at, semper eget arcu.</p>
+					<a href="#"><span>see more&nbsp;<i class="fas fa-chevron-right"></i></span></a>
+				</div>
+				
+				<div class="simpleblog">
+					<a href="img/camera-photos.jpg" target="_blank"><img src="img/camera-photos.jpg" alt="blog image" class="img-blog" width="262.5" height="176.31"></a>
+					<h3>simple blog post</h3>
+					<p>In accumsan id turpis vitae eleifend. Phasellus in sapien feugiat dolor finibus</p>
+					<a href="#"><span>see more&nbsp;<i class="fas fa-chevron-right"></i><!--&#9658;--></span></a>
+				</div>
+				
+				<div class="anotherblog">
+					<a href="img/brochure.jpg" target="_blank"><img src="img/brochure.jpg" alt="blog image" class="img-blog" width="262.5" height="176.31"></a>
+					<h3>another blog post</h3>
+					<p>Nullam hendrerit rhoncus diam id interdum. Maecenas vel finibus justo.</p>
+					<a href="#"><span>see more&nbsp;<i class="fas fa-chevron-right"></i></span></a>
+				</div>
+			</div>
+		</section>
+		
+		<!--
+		*********************************************************************************
+		********************************SECTION FEATURES*********************************
+		*********************************************************************************
+		-->
+		<section id="features">
+			<h2>the best features</h2>
+			<p>with features engineered from best practices used by leading<br>property management companies worldwide</p>
+			
+			<div class="feature-container">
+				<div class="feature">
+					<div class="paintbrush"><i class="fas fa-paint-brush"></i></div>
+					<h3>design with psd files</h3>
+					<p>Etiam id nulla et velit aliquam pretium ut quis tortor. Donec ut tortor et nulla maximus faucibus eu</p>
+				</div>
+			
+				<div class="feature">
+					<div class="support"><i class="fas fa-coffee"></i></div>
+					<h3>support&nbsp;&amp;&nbsp;coffee</h3>
+					<p>Nunc et molestie ante, vel tincidunt lectus. Donec vel blandit diam. Sed pellentesque nibh id elit sollicitudin</p>
+				</div>
+		
+				<div class="feature">
+					<div class="keyboard"><i class="far fa-keyboard"></i></div>
+					<h3>clean coded</h3>
+					<p>Nullam rutrum sapien ut justo venenatis, quis cursus arcu eleifend. Quisque tempus molestie tellus</p>
+				</div>
+		
+			</div>
+			
+		</section>
+		
+		<!--
+		*********************************************************************************
+		****************************SECTION RESPONSIVENESS*******************************
+		*********************************************************************************
+		-->
+		<section class="responsiveness">
+			<h2>responsiveness - you bet</h2>
+			<p>Maecenas odio turpis, eleifend in lacus vel, dignissim vulputate libero. 
+			Vestibulum nec condimentum ipsum. Phasellus ornare tortor at augue eleifend rhoncus. 
+			Integer lobortis tellus non leo aliquet rhoncus. Curabitur vulputate, felis non aliquam congue, 
+			tortor ex congue nulla, sed pellentesque sem ligula sit amet mi. 
+			Aenean quis lacinia diam. Vestibulum fringilla maximus pellentesque.</p>
+		</section>
+		
+		<!--
+		*********************************************************************************
+		**************************SECTION COLOR ADJUSTMENT*******************************
+		*********************************************************************************
+		-->
+		<section class="color-adjustment">
+			<h2>easily changing colors</h2>
+			<p>Etiam id nulla et velit aliquam pretium ut quis tortor. Donec ut tortor 
+			et nulla maximus faucibus eu elementum mi. Nunc et molestie ante, vel tincidunt lectus. 
+			Donec vel blandit diam. Sed pellentesque nibh id elit sollicitudin, id bibendum lectus finibus. 
+			Nullam rutrum sapien ut justo venenatis, quis cursus arcu eleifend. Quisque tempus molestie tellus, 
+			quis auctor urna ornare id. Vivamus commodo sit amet arcu nec luctus.</p>
+		</section>
+		
+		<!--
+		*********************************************************************************
+		***************************SECTION SIMPLE PRICING********************************
+		*********************************************************************************
+		-->
+		<section id="pricing">
+			<h2>simple pricing</h2>
+			<p>choose what fits you best</p>
+			
+			<div class="price-container">
+				<div class="price-option">
+					<div class="personal"><i class="fas fa-user"></i></div> 
+					<span><b>personal</b></span>
+					<span class="price">29</span>
+					<p>No minimum or setup<br>fees 24 free support<br>Money back guarantee<br>7 features installed</p>
+				</div>
+			
+				<div class="price-option"> 
+					<div class="small-team"><i class="fas fa-users"></i></div> 
+					<span><b>small team</b></span>
+					<span class="price">39</span>
+					<p>Corporate<br>24/7 support<br>New updates included<br>Awesome widgets installed</p>
+				</div>
+				
+				<div class="price-option"> 
+					<div class="enterprize"><i class="fas fa-university"></i></div> 
+					<span><b>enterprize</b></span>
+					<span class="price">49</span>
+					<p>Phasellus malesuada tincidunt neque vel posuere. Sed ullamcorper turpis id feugiat</p>
+				</div>
+				
+				<div class="price-option"> 
+					<div class="corporate"><i class="fas fa-briefcase"></i></div> 
+					<span><b>corporate</b></span>
+					<span class="price">59</span>
+					<p>Ut condimentum pharetra sapien, at molestie dolor molestie eu. Suspendisse euismod est purus</p>
+				</div>
+				
+			</div>
+			
+		</section>
+	
+		<!--
+		*********************************************************************************
+		**********************************SECTION REVIEWS********************************
+		*********************************************************************************
+		-->
+		<section class="reviews">
+			<div class="review-container">
+				<div id="review-img_first" class="review"> 
+					<a href="https://teamtreehouse.com/"><img src="img/treehouse-logo.png" alt="treehouse-logo" class="company" width="155" height="34"></a>
+					<p class="review-txt">I am really happy what flexible is able to<br>offer. This guys are amazing, support 24<br>hours, really helpfull.</p>
+					<img src="img/user1.png" class="user" alt="user" width="54" height="54">
+					<span>Ferry Corsten, Web Designer</span>
+				</div>
+				
+				<div id="review-img_second" class="review"> 
+					<a href="https://dribbble.com/"><img src="img/dribbble-logo.png" alt="dribbble-logo" class="company" width="110" height="27"></a>
+					<p class="review-txt">Maybe the best product - and definitely the<br>best support of any modul I've used.</p>
+					<img src="img/user2.png" class="user" alt="user" width="54" height="54">
+					<span>Adriana Lima, model</span>
+				</div>
+				
+				<div id="review-img_third" class="review"> 
+					<a href="https://www.behance.net/"><img src="img/behance-logo.png" alt="behance-logo" class="company" width="110" height="22"></a>
+					<p class="review-txt">Exellent and stable theme that serves its<br>purpose beautifully. Easy to use and easy to<br>setup.</p>
+					<img src="img/user3.png" class="user" alt="user" width="54" height="54">
+					<span>Amanda Hemingway, Web developer</span>
+				</div>
+
+				<div class="review-indicator">
+					<a class="review-btn_link" href="#review-img_first"></a>
+					<a class="review-btn_link" href="#review-img_second"></a>
+					<a class="review-btn_link" href="#review-img_third"></a>
+				</div>
+			</div>
+		</section>
+		
+		<!--
+		*********************************************************************************
+		********************************SECTION GET OFFER********************************
+		*********************************************************************************
+		-->
+		<section class="get-offer">
+			<div class="get-offer-overlay">
+				<h1>Simple and effective landing page</h1>
+				<p>See how Flexible can became your perfect website</p>
+				<button type="button" class="btn-call">call to action</button>
+			</div>
+		</section>
+		
+		</main>
+		
+		<!--
+		*********************************************************************************
+		***************************************FOOTER************************************
+		*********************************************************************************
+		-->
+		<footer id="contact">
+
+			<div class="copyright">
+			    <img src="img/footer-logo.png" alt="logo" class="footer-logo" width="37" height="47">
+				<p class="copyright-p">&copy;&nbsp;Copyright 2016 Flexible. All rights reserved.</p>
+				<p class="contact-p">ph. 00000444-6598369865-7346574<br>peak Masherbrum, The Karakoram</p>
+				<div class="social-btn">
+					<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+	
+		</footer>
+
+		<div id="back-top">
+			<a href="#" onclick="return up()"><i class="fas fa-arrow-circle-up"></i></a>  
+		</div> 
+
+	</div>		
+</body>	
+</html>
