@@ -9,12 +9,12 @@
 	<link rel='stylesheet' id='fontawesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css?ver=4.4.1' type='text/css' media='all' />
 	-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<!--  
 	<script type="text/javascript" href="script/script.js"></script>
 	-->
 	<!--Плавное перемещение по ссылкам меню навигации-->
-	<script type="text/javascript">
+	<script>
 		$(document).ready(function(){
 		   	$("#menu").on("click","a", function (event) {
 			   	event.preventDefault();
@@ -26,7 +26,7 @@
 	</script>
 
 	<!--Плавное перемещение вверх по клику кнопки back to top-->
-	<script type="text/javascript">
+	<script>
 		function up() {  
   			var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);  
 				if(top > 0) {  
@@ -86,7 +86,7 @@
 			
 			<div class="blog-container">
 				<div class="bestblog">
-					<a href="img/phones.jpg" target="_blank"><img src="img/phones.jpg" alt="blog image" class="img-blog" width="262.5" height="176.31"></a>
+					<a href="img/phones.jpg" target="_blank"><img src="img/phones.jpg" alt="blog image" class="img-blog" width="263" height="176"></a>
 					<h3>best blog post</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae dolor</p>
 					<a href="#"><span>see more&nbsp;<i class="fas fa-chevron-right"></i></span></a>
@@ -94,21 +94,21 @@
 				</div>
 				
 				<div class="standartblog">
-					<a href="img/chair.jpg" target="_blank"><img src="img/chair.jpg" alt="blog image" class="img-blog" width="262.5" height="176.31"></a>
+					<a href="img/chair.jpg" target="_blank"><img src="img/chair.jpg" alt="blog image" class="img-blog" width="263" height="176"></a>
 					<h3>standart blog post</h3>
 					<p>Vestibulum nisl lectus, viverra hendrerit tincidunt at, semper eget arcu.</p>
 					<a href="#"><span>see more&nbsp;<i class="fas fa-chevron-right"></i></span></a>
 				</div>
 				
 				<div class="simpleblog">
-					<a href="img/camera-photos.jpg" target="_blank"><img src="img/camera-photos.jpg" alt="blog image" class="img-blog" width="262.5" height="176.31"></a>
+					<a href="img/camera-photos.jpg" target="_blank"><img src="img/camera-photos.jpg" alt="blog image" class="img-blog" width="263" height="176"></a>
 					<h3>simple blog post</h3>
 					<p>In accumsan id turpis vitae eleifend. Phasellus in sapien feugiat dolor finibus</p>
 					<a href="#"><span>see more&nbsp;<i class="fas fa-chevron-right"></i><!--&#9658;--></span></a>
 				</div>
 				
 				<div class="anotherblog">
-					<a href="img/brochure.jpg" target="_blank"><img src="img/brochure.jpg" alt="blog image" class="img-blog" width="262.5" height="176.31"></a>
+					<a href="img/brochure.jpg" target="_blank"><img src="img/brochure.jpg" alt="blog image" class="img-blog" width="263" height="176"></a>
 					<h3>another blog post</h3>
 					<p>Nullam hendrerit rhoncus diam id interdum. Maecenas vel finibus justo.</p>
 					<a href="#"><span>see more&nbsp;<i class="fas fa-chevron-right"></i></span></a>
@@ -220,10 +220,10 @@
 	
 		<!--
 		*********************************************************************************
-		**********************************SECTION REVIEWS********************************
+		*************************************REVIEWS*************************************
 		*********************************************************************************
 		-->
-		<section class="reviews">
+		<div class="reviews">
 			<div class="review-container">
 				<div id="review-img_first" class="review"> 
 					<a href="https://teamtreehouse.com/"><img src="img/treehouse-logo.png" alt="treehouse-logo" class="company" width="155" height="34"></a>
@@ -252,7 +252,7 @@
 					<a class="review-btn_link" href="#review-img_third"></a>
 				</div>
 			</div>
-		</section>
+		</div>
 		
 		<!--
 		*********************************************************************************
@@ -261,7 +261,7 @@
 		-->
 		<section class="get-offer">
 			<div class="get-offer-overlay">
-				<h1>Simple and effective landing page</h1>
+				<h2>Simple and effective landing page</h2>
 				<p>See how Flexible can became your perfect website</p>
 				<button type="button" class="btn-call">call to action</button>
 			</div>
